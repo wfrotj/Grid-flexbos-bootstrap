@@ -1,0 +1,145 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body { 
+     
+}
+.grid-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr ;
+     grid-template-rows: .25fr 1fr 1fr .5fr;
+     gap: 10px;
+     background-color: rgb(81, 245, 245);
+}
+header {
+     grid-column: 1 / 5;
+     grid-row: 1 / 2;
+    
+}
+aside {
+     grid-column: 1 / 2;
+     grid-row: 2 / 4;
+  
+}
+main {
+     grid-column: 2 / 4;
+     grid-row: 2 / 4;
+   
+}
+.logo {
+     grid-column: 4 / 5 ;
+     grid-row: 2 / 4;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     
+}
+footer {
+     grid-column: 1 / 5;
+     grid-row: 4 / 5;
+
+}
+
+.support-tagline {
+     position: relative;
+     width: 150px;
+     flex-direction: column;
+     width: 450px;
+     font-size: 15px;
+     
+}
+.name {
+     font-size: 25px;
+     text-align: center;   
+     line-height: 10px;
+     left: 250px;
+     
+}
+
+.support-taglo,
+.support-tagline,
+.support-tagle {
+     position: relative;
+     top: 180px;
+     text-align: center;
+     left: 150px;
+     z-index: 2;
+}
+.support-tagle {
+     padding-top: 5px;
+}
+.job {
+     font-size: 65px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     position: relative;
+     text-align: center;
+     width: 550px;
+     text-align: center;
+     line-height: 45px;
+     border-top: 2px solid black;
+     border-bottom: 2px solid black;
+}
+
+/*aside*/
+aside div {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+/* main */
+.main-container {
+     position: relative;
+     top: 150px;
+
+}
+.main1 img {
+     width: 680px;
+     border-radius: 50px;
+     top: 40px;
+     height: 550px;
+     position: relative;
+}
+.main1 img:hover {
+     opacity: 1;
+}
+/*logo */
+.logo-container img {
+     width: 50px;
+     height: 45px;
+     margin: 10px 10px;
+    
+    
+}
+.logo-container {
+     width: 80px;
+     height: 300px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     position: relative;
+     z-index: 3;
+     padding:0;
+
+}
+
+.logo-container .logo {
+     position: absolute;
+     
+}
+.logo-container img {
+     opacity: 1;
+     
+ }
+ 
+ img:hover {
+     opacity: .6;
+ }
+ .card-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
