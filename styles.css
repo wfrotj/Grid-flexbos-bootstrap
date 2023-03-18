@@ -3,25 +3,31 @@
      padding: 0;
      box-sizing: border-box;
 }
-body { 
-     
-}
+
 .grid-container {
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr ;
-     grid-template-rows: .25fr 1fr 1fr .5fr;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: .5fr 1fr 1fr .5fr;
      gap: 10px;
-     background-color: rgb(81, 245, 245);
+     height: 100vh;
+     /*background-color: rgb(81, 245, 245);*/ 
 }
 header {
      grid-column: 1 / 5;
      grid-row: 1 / 2;
-    
+}
+main {
+     grid-column: 2 / 4;
+     grid-row: 2 / 4 ;
+}
+
+header {
+     grid-column: 1 / 5;
+     grid-row: 1 / 2 ;
 }
 aside {
      grid-column: 1 / 2;
-     grid-row: 2 / 4;
-  
+     grid-row: 2 / 5;
 }
 main {
      grid-column: 2 / 4;
@@ -83,6 +89,7 @@ footer {
 }
 
 /*aside*/
+
 aside div {
      display: flex;
      justify-content: space-around;
@@ -90,28 +97,29 @@ aside div {
 }
 
 /* main */
+
 .main-container {
      position: relative;
-     top: 150px;
-
+     top: 80px;
 }
+
+
 .main1 img {
      width: 680px;
-     border-radius: 50px;
-     top: 40px;
+     border-radius: 80px;
      height: 550px;
      position: relative;
+     
 }
-.main1 img:hover {
-     opacity: 1;
-}
+*/
+
 /*logo */
+
 .logo-container img {
      width: 50px;
      height: 45px;
      margin: 10px 10px;
-    
-    
+       
 }
 .logo-container {
      width: 80px;
@@ -120,11 +128,9 @@ aside div {
      justify-content: center;
      align-items: center;
      flex-direction: column;
-     position: relative;
-     z-index: 3;
-     padding:0;
-
+     position: relative;  
 }
+
 
 .logo-container .logo {
      position: absolute;
@@ -135,11 +141,61 @@ aside div {
      
  }
  
- img:hover {
+.logo-container img:hover {
      opacity: .6;
  }
- .card-container {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+ .experience-container {
+     grid-column: 0 / 1;
+     grid-row: 11 / 14;
  }
+.card-container {
+     grid-column: 2 / 4;
+     grid-row: 11 / 14;
+     width: auto;
+}
+div.col {
+     padding: 0;
+     justify-content: center;
+     justify-content: center;
+     background-color: red;
+}
+header .nav {
+     background-color: black;
+}
+*/
+/* Desktop Devices */
+/*
+@media screen and (min-width: 961px) {
+     
+}
+@media screen and (min-width: 401px) and (max-width: 960px) {
+     .main-container img {
+          display: flex;
+          display: flex;
+          max-width: 100%;
+          justify-content: center;
+          position: relative;
+          height: auto;
+        
+     }
+}
+
+ @media screen and (max-width: 401px) {
+     .main-container {
+          display: flex;
+          max-width: 100%;
+          justify-content: center;
+          height: auto;
+        
+     }
+     
+     div.logo-container {
+          display: flex;
+          
+          
+     }
+     #statement div p {
+          display: flex;
+     }
+}
+*/
