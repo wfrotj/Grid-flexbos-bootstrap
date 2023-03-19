@@ -4,83 +4,50 @@
   box-sizing: border-box;
 }
 
-div .hero-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr .5fr .5fr;
-  margin-top: 40px;
-  position: relative;
-  
-}
-.profile img {
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
+.hero-section {
+  margin: 10px 10px;
   display: flex;
-  
-  
+  flex-direction: column;
+  align-items: center;
 }
-div .hero-section .profile {
-  font-size: 8px;
+.hero-section .support-tagline {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 0;
-
-}
-div .hero-section .text-muted {
-  margin-right: 5px;
-}
-
-
-#statement {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-  font-size: 8px;
-  display: flex;
-  flex-direction: column;
-  margin: 0px 5px 5px 50px;
-}
-div .support-tagline .name {
-  color: red;
+  line-height: 15px;
   font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  color: black;
 }
-div .support-taglo .job{
+.hero-section .support-tagline .name {
+  font-size: 20px;
+}
+
+.job {
   font-size: 25px;
-}
-aside .logo {
   display: flex;
   justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  border-top: 2px solid rgb(48, 228, 156);
+  border-bottom: 2px solid rgb(48, 228, 156);
+  color: black;
+  line-height: 22px;
+}
+.description {
+  color: black;
+  text-align: center;
 }
 .logo-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  position: absolute;
+  width: 25px;
 
+  gap: 20px;
+  bottom: 350px;
+  margin-left: 30px;
 }
-
-.logo-container img{
-  width: 15px;
-  display: flex;
-
-
- 
+.card-container {
+  margin: 10px 10px;
 }
-
-
-
-
-*/
-/* Desktop Devices */
-/*
-@media screen and (min-width: 961px) {
-}*/
-/*
-@media screen and (min-width: 401px) and (max-width: 960px) {
+footer {
 }
-
-@media screen and (max-width: 401px) */
-  
