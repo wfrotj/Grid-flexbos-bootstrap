@@ -1,201 +1,86 @@
 * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.grid-container {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-     grid-template-rows: .5fr 1fr 1fr .5fr;
-     gap: 10px;
-     height: 100vh;
-     /*background-color: rgb(81, 245, 245);*/ 
+div .hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr .5fr .5fr;
+  margin-top: 40px;
+  position: relative;
+  
 }
-header {
-     grid-column: 1 / 5;
-     grid-row: 1 / 2;
+.profile img {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  display: flex;
+  
+  
 }
-main {
-     grid-column: 2 / 4;
-     grid-row: 2 / 4 ;
-}
-
-header {
-     grid-column: 1 / 5;
-     grid-row: 1 / 2 ;
-}
-aside {
-     grid-column: 1 / 2;
-     grid-row: 2 / 5;
-}
-main {
-     grid-column: 2 / 4;
-     grid-row: 2 / 4;
-   
-}
-.logo {
-     grid-column: 4 / 5 ;
-     grid-row: 2 / 4;
-     justify-content: center;
-     align-items: center;
-     display: flex;
-     
-}
-footer {
-     grid-column: 1 / 5;
-     grid-row: 4 / 5;
+div .hero-section .profile {
+  font-size: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 0;
 
 }
-
-.support-tagline {
-     position: relative;
-     width: 150px;
-     flex-direction: column;
-     width: 450px;
-     font-size: 15px;
-     
-}
-.name {
-     font-size: 25px;
-     text-align: center;   
-     line-height: 10px;
-     left: 250px;
-     
-}
-
-.support-taglo,
-.support-tagline,
-.support-tagle {
-     position: relative;
-     top: 180px;
-     text-align: center;
-     left: 150px;
-     z-index: 2;
-}
-.support-tagle {
-     padding-top: 5px;
-}
-.job {
-     font-size: 65px;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     position: relative;
-     text-align: center;
-     width: 550px;
-     text-align: center;
-     line-height: 45px;
-     border-top: 2px solid black;
-     border-bottom: 2px solid black;
-}
-
-/*aside*/
-
-aside div {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-}
-
-/* main */
-
-.main-container {
-     position: relative;
-     top: 80px;
+div .hero-section .text-muted {
+  margin-right: 5px;
 }
 
 
-.main1 img {
-     width: 680px;
-     border-radius: 80px;
-     height: 550px;
-     position: relative;
-     
+#statement {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 5px 5px 50px;
 }
-*/
-
-/*logo */
-
-.logo-container img {
-     width: 50px;
-     height: 45px;
-     margin: 10px 10px;
-       
+div .support-tagline .name {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+div .support-taglo .job{
+  font-size: 25px;
+}
+aside .logo {
+  display: flex;
+  justify-content: center;
 }
 .logo-container {
-     width: 80px;
-     height: 300px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     position: relative;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
 
+.logo-container img{
+  width: 15px;
+  display: flex;
 
-.logo-container .logo {
-     position: absolute;
-     
-}
-.logo-container img {
-     opacity: 1;
-     
- }
+
  
-.logo-container img:hover {
-     opacity: .6;
- }
- .experience-container {
-     grid-column: 0 / 1;
-     grid-row: 11 / 14;
- }
-.card-container {
-     grid-column: 2 / 4;
-     grid-row: 11 / 14;
-     width: auto;
 }
-div.col {
-     padding: 0;
-     justify-content: center;
-     justify-content: center;
-     background-color: red;
-}
-header .nav {
-     background-color: black;
-}
+
+
+
+
 */
 /* Desktop Devices */
 /*
 @media screen and (min-width: 961px) {
-     
-}
+}*/
+/*
 @media screen and (min-width: 401px) and (max-width: 960px) {
-     .main-container img {
-          display: flex;
-          display: flex;
-          max-width: 100%;
-          justify-content: center;
-          position: relative;
-          height: auto;
-        
-     }
 }
 
- @media screen and (max-width: 401px) {
-     .main-container {
-          display: flex;
-          max-width: 100%;
-          justify-content: center;
-          height: auto;
-        
-     }
-     
-     div.logo-container {
-          display: flex;
-          
-          
-     }
-     #statement div p {
-          display: flex;
-     }
-}
-*/
+@media screen and (max-width: 401px) */
+  
